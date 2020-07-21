@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 16rem;
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Patrick Hand', cursive;
+    border: 3px solid #e3d4d4;
+    width: 80%;
+    border-radius: 40px;
+    height: 100vh;
+    box-shadow: 2px 2px #e2c4c4;
+    overflow-y: auto;
+    min-width: 16rem;
+    max-width: 1100px;
+}
+
+header, main {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+header>h1 {
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+}
+
+header>div * {
+    font-family: 'Patrick Hand', cursive;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main * {
+    font-family: 'Patrick Hand', cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-action__name{
+    width: 50%;
+}
+
+#header-action__quantity {
+    width: 2rem;
+}
+
+#header-action__category>button {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 900;
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+#header-action__category>button:focus,
+#header-action__category>button:hover {
+    color: green;
+}
+
+#header-action>button {
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 0;
+    border-radius: 50%;
+    border: black solid;
+    cursor: pointer;
+ }
+
+ #header-action>button:focus,
+ #header-action>button:hover {
+     border-color: green;
+ }
+
+table {
+    width: 100%;
+}
+
+th {
+    border-bottom: 2px black dashed;
+    height: 50px;
+  }
+
+
+tbody tr {
+    text-align: center;
+}
+
+table .row-checkbox {
+    width: 2rem;
+    cursor: pointer;
+}
+
+table .row-checkbox>input {
+    cursor: pointer;
+}
+
+
+table .row-category {
+    width: 12rem;
+}
+
+table .row-product {
+    width: 12rem;
+}
+
+table .row-quantity>input {
+    width: 2rem;
+}
+
+table .row-edit {
+    width: 5rem;
+}
+
+table .row-edit>i {
+    cursor: pointer;
+}
+
+table .row-edit>i:focus,
+table .row-edit>i:hover {
+    color: red;
+}
+
+
+table .row-edit i:first-of-type{
+    margin-right: 1rem;
+}
+
+#new-category-container {
+    border: 1px solid black;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    background: white;
+    padding: 10px;
+    min-width: 290px;
+
+ }
+
+ #new-category-container input {
+    width: 6rem;
+ }
+
+ .hidden {
+     display:none;
+ }
+
+#new-category-container__confirmbtn, 
+#new-category-container__cancelbtn{
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    width: 3.0rem;
+    height: 3.0rem;
+    padding: 0;
+    border-radius: 50%;
+    border: black solid;
+    cursor: pointer;
+ }
+
+#new-category-container__confirmbtn {
+    position: absolute;
+    right: 5%;
+    top: 10px;
+  }
+
+  #new-category-container__cancelbtn {
+    position: absolute;
+    right: 5%;
+    bottom: 5px;
+  }
+
+#new-category-container__confirmbtn:focus,
+#new-category-container__confirmbtn:hover {
+     border-color: green;
+ }
+
+#new-category-container__cancelbtn:focus,
+#new-category-container__cancelbtn:hover {
+     border-color: red;
+ }
+
+ @media (max-width: 580px) {
+    body {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #header-action__name {
+        width: 20%;
+    }
+
+    #new-category-container {
+        width: 100%;
+        left: 0;
+        min-width: 290px;
+     }
+
+    
+ }

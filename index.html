@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shopping List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/app.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src='scripts/app.js' defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>My Shopping List</h1>
+        <div id="header-action">
+            <input id="header-action__name" type="text" placeholder="Add a new product!"/>
+            <input id="header-action__quantity" max="9" min="1" type="number" value="1"/>
+            <div id="header-action__category">
+                <select>
+                    <option selected disabled>Select a Category!</option>
+                    <option>Grocery</option>
+                    <option>Greengrocer</option>
+                    <option>Pharmacy</option>
+                    <option>Cosmetics Store</option>
+                </select>
+                <button id="header-action__button-category" >+</button>
+            </div>
+            <button id="button-add">Add</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <p>Search: <input id="search" type="text" placeholder="Filter the table!" /></p>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-building fa-2x" aria-hidden="true"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td class="row-checkbox">
+                        <input type="checkbox" />
+                    </td>
+                    <td class="row-category">Grocery</td>
+                    <td class="row-product">Paper 1</td>
+                    <td class="row-quantity">
+                        <input type="number" disabled value="1"/>
+                    </td>
+                    <td class="row-edit">
+                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="row-checkbox">
+                        <input type="checkbox" />
+                    </td>
+                    <td class="row-category">Grocery</td>
+                    <td class="row-product">Paper 2</td>
+                    <td class="row-quantity">
+                        <input type="number" disabled value="1"/>
+                    </td>
+                    <td class="row-edit">
+                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </td>
+                </tr> -->
+
+            </tbody>
+        </table>
+    </main>
+    <div id="new-category-container" class="hidden">
+        <p>Add a new category: <input type="text" /><button id="new-category-container__confirmbtn">Add</button></p>
+        <p>Categories that can be selected:</p>
+        <ul>
+            <li>Grocery</li>
+            <li>Greengrocer</li>
+            <li>Pharmacy</li>
+            <li>Cosmetics Store</li>
+        </ul>
+        <button id="new-category-container__cancelbtn">Close</button>
+    </div>
+</body>
+</html>
